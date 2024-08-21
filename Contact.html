@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/452b531563.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="menu-toggle fas fa-bars"></div> <!-- Font Awesome menu icon -->
+                <ul>
+                    <div class="close-menu fas fa-times"></div> <!-- Font Awesome close icon -->
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li class="services-item"><a href="Services.html">PROJECTS</a></li>
+                    <li><a href="Portfolio.html">CONTACT</a></li>
+                
+                </ul>
+            </nav>
+
+            <h2 class="about-me-heading">About Me</h2> <!-- Added About Me heading -->
+            <div class="tab-container">
+              <div class="tab-buttons">
+                  <button class="tablink active" onclick="openTab(event, 'Education')">Education</button>
+                  <button class="tablink" onclick="openTab(event, 'Skills')">My Skills</button>
+                  <button class="tablink" onclick="openTab(event, 'Experience')">My Experience</button>
+              </div>
+          
+              <div id="Education" class="tabcontent">
+                  <h3>Education</h3>
+                  <p>Details about your education.</p>
+              </div>
+          
+              <div id="Skills" class="tabcontent" style="display:none;">
+                  <h3>My Skills</h3>
+                  <p>Details about your skills.</p>
+              </div>
+          
+              <div id="Experience" class="tabcontent" style="display:none;">
+                  <h3>My Experience</h3>
+                  <p>Details about your experience.</p>
+              </div>
+          </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-section">
+                    <h3>Contact Me</h3>
+                    <p>Email: <a href="mailto:mosesodhiambo801@gmail.com">mosesodhiambo801@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+254 717 892 776">+254 717 892 776</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="#about">About</a></p>
+                    <p><a href="#projects">Projects</a></p>
+                    <p><a href="#contact">Contact</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Social Links</h3>
+                    <div class="social-media">
+                        <a href="https://facebook.com" target="_blank" class="fab fa-facebook-f"></a>
+                        <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+                        <a href="https://linkedin.com" target="_blank" class="fab fa-linkedin-in"></a>
+                        <a href="https://youtube.com" target="_blank" class="fab fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Moses Odhiambo. All rights reserved.</p>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
