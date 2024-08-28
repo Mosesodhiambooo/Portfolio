@@ -1,117 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/452b531563.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 
+  <title>Moses Odhiambo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <link rel="stylesheet" href="koll.css">
 
 </head>
-<body>
-    
-    <div id="header">
-        <div class="container">
-            <!-- Navigation Bar -->
-<nav>
-    <div class="logo">
-        <!-- Logo Here -->
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <span class="navbar-toggle" onclick="toggleNav()">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </span>
+      <a class="navbar-brand" href="kol.html">Mosecodes</a>
     </div>
-    <div class="menu-toggle"></div>
-    <div class="close-menu" style="display: none;"></div>
-    <ul>
-        <!-- Navigation Links Here -->
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="About.html">ABOUT</a></li>
-            <li><a href="Services.html">PROJECTS</a></li>
-            <li><a href="Portfolio.html">CONTACT</a></li>
+    <!-- Navbar links for desktop -->
+    <ul class="nav navbar-nav navbar-right hidden-xs">
+      <li><a href="kol.html" onclick="scrollToSection('index.html')">HOME</a></li>
+      <li><a href="abt.html" onclick="scrollToSection('band')">ABOUT</a></li>
+      <li><a href="Kservices.html" onclick="scrollToSection('tour')">SERVICES</a></li>
+      <li><a href="kontact.html" onclick="scrollToSection('contact')">CONTACT</a></li>
     </ul>
+  </div>
 </nav>
 
-            
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html" onclick="scrollToSection('myPage')">HOME</a>
+  <a href="abt.html" onclick="scrollToSection('band')">ABOUT</a>
+  <a href="Kservices.html" onclick="scrollToSection('tour')">SERVICES</a>
+  <a href="kontact.html" onclick="scrollToSection('contact')">CONTACT</a>
+</div>
 
-            <div class="header-text">
-                <h1>Web Design that <br> drives <span>Sales.!</span></h1>
-                <p>Design, Copy, and development engineered to <strong>turn browsers into buyers</strong> and <strong class="centered-sentence">drive sales on autopilot...!</strong></p>
-            </div>
-            <!-- CTA Button Container -->
-            <div class="cta-container">
-                <a href="About.html" class="cta-button">Get in Touch</a>
-            </div>
-        </div>
-    </div>
+<div id="mainContent" class="main-content">
+  <!-- Main content goes here -->
+  <div class="header-text">
+    <h1>Web Design that <br> drives <span>Sales.!</span></h1>
+    <p>Design, Copy, and development engineered to <strong>turn browsers into buyers</strong> and <strong class="centered-sentence">drive sales on autopilot...!</strong></p>
+</div>
 
+<!-- CTA Button Container -->
+<div class="cta-container">
+  <a href="abt.html" class="cta-button">Get in Touch</a>
+  <a href="Moses Odhiambo CV.pdf" class="cta-button" download="">Download CV</a>
+</div>
 
-    <h1 class="about-me-heading">Latest projects</h1>
-    <div class="projects-container">
-        <div class="project-card">
-            <img src="image/Project1.png" alt="">
-            <div class="project-info">
-                <!-- <h3>Online Grocery ecommerce Website</h3> -->
-                 <!-- <p>This is a brief description of Project 1. It showcases some of the features and highlights.</p> -->
-                <a href="https://mosesodhiambooo.github.io/Grocery/" target="_blank">View Project</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <img src="image/project2.jpg" alt="">
-            <div class="project-info">
-                <!-- <h3>Project 2</h3> -->
-                <!-- <p>This is a brief description of Project 2. It highlights the key aspects and unique features.</p> -->
-                <a href="https://example.com/project2" target="_blank">View Project</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <img src="image/project4.jpg" alt="">
-            <div class="project-info">
-                <!-- <h3>Project 3</h3> -->
-                <!-- <p>This is a brief description of Project 3. It provides an overview of the project and its benefits.</p> -->
-                <a href="https://example.com/project3" target="_blank">View Project</a>
-            </div>
-        </div>
-    </div>
-    <div class="cta-container">
-        <a href="" class="cta-button">View More Projects</a>
-    </div>
-
-    
-    <footer>
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-section">
-                    <h3>Contact Me</h3>
-                    <p>Email: <a href="mailto:mosesodhiambo801@gmail.com">mosesodhiambo801@gmail.com</a></p>
-                    <p>Phone: <a href="tel:+254 717 892 776">+254 717 892 776</a></p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <p><a href="index.html">Home</a></p>
-                    <p><a href="About.html">About</a></p>
-                    <p><a href="Services.html">Projects</a></p>
-                    <p><a href="#contact">Contact</a></p>
-                </div>
-                <div class="footer-section">
-                    <h3>Social Links</h3>
-                    <div class="social-media">
-                        <a href="https://facebook.com" target="_blank" class="fab fa-facebook-f"></a>
-                        <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
-                        <a href="https://linkedin.com" target="_blank" class="fab fa-linkedin-in"></a>
-                        <a href="https://youtube.com" target="_blank" class="fab fa-youtube"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Moses Odhiambo. All rights reserved.</p>
-            </div>
-        </div>
+<!-- Social Media Icons -->
+<div class="social-icons">
+  <a href="https://github.com/YourUsername" target="_blank" class="social-icon" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/YourProfile/" target="_blank" class="social-icon" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://twitter.com/YourUsername" target="_blank" class="social-icon" aria-label="Twitter">
+      <i class="fab fa-twitter"></i> 
+  </a>
+  <a href="https://facebook.com/YourUsername" target="_blank" class="social-icon" aria-label="Facebook">
+      <i class="fab fa-facebook"></i>
+  </a>
+</div>
 
 
-        
-    <script src="script.js"></script>
+<section class="stats-section">
+  <div class="stats-container">
+      <div class="stats-item">
+          <span class="stats-number" data-target="10">0</span>
+          <p>Projects Built</p>
+      </div>
+      <div class="stats-item">
+          <span class="stats-number" data-target="2">0</span>
+          <p>Years of Experience</p>
+      </div>
+  </div>
+</section>
+
+<section class="expertise-section">
+  <h2 class="expertise-title">My Expertise</h2>
+  <div class="expertise-container">
+      <div class="expertise-icon">
+          <i class="fab fa-html5"></i>
+          <p>HTML</p>
+      </div>
+      <div class="expertise-icon">
+          <i class="fab fa-css3-alt"></i>
+          <p>CSS</p>
+      </div>
+      <div class="expertise-icon">
+          <i class="fab fa-js"></i>
+          <p>JavaScript</p>
+      </div>
+      <div class="expertise-icon">
+          <i class="fab fa-react"></i>
+          <p>React</p>
+      </div>
+      <div class="expertise-icon">
+          <i class="fab fa-python"></i>
+          <p>Python</p>
+      </div>
+      <div class="expertise-icon">
+          <i class="fab fa-php"></i>
+          <p>PHP</p>
+      </div>
+  </div>
+</section>
+
+<section class="projects-section">
+  <h2 class="projects-title">Latest Projects</h2>
+  <div class="projects-container">
+      <div class="project-card">
+          <img src="image/Project1.png" alt="" class="project-image">
+          <div class="project-overlay">
+              <a href="https://mosesodhiambooo.github.io/Grocery/" class="view-project">View Project</a>
+          </div>
+      </div>
+      <div class="project-card">
+          <img src="image/project5.jpg" alt="" class="project-image">
+          <div class="project-overlay">
+              <a href="project2.html" class="view-project">View Project</a>
+          </div>
+      </div>
+      <div class="project-card">
+          <img src="image/project3.jpg" alt="" class="project-image">
+          <div class="project-overlay">
+              <a href="project3.html" class="view-project">View Project</a>
+          </div>
+      </div>
+  </div>
+  <a href="Kservices.html" class="view-more">View More Projects</a>
+</section>
+
+
+<footer>
+  <div class="footer-container">
+      <!-- Social Media Links -->
+      <div class="footer-section social-media">
+          <h4>Follow Me</h4>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="footer-section contact-info">
+          <h4>Contact Me</h4>
+          <p><i class="fas fa-envelope"></i>mosesodhiambo801@gmail.com</p>
+          <p><i class="fas fa-phone-alt"></i> +254 717 892 776</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section quick-links">
+          <h4>Quick Links</h4>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="abt.html">About Me</a></li>
+              <li><a href="Kservices.html">Services</a></li>
+              <li><a href="kontact.html">Contact</a></li>
+          </ul>
+      </div>
+
+      
+
+      <!-- Map -->
+      <div class="footer-section map">
+          <h4>Location</h4>
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63910.14573224643!2d36.821946107016695!3d-1.2863895858259294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f112a2158a773%3A0x5a8b7199b8f5d8e9!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2s!4v1692615203409!5m2!1sen!2s"
+              width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+      </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+      <p>&copy; Moses Odhiambo. All rights reserved.</p>
+  </div>
+</footer>
+</div>
+
+
+<script src="kolll.js"></script>
+
 </body>
 </html>
