@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Moses Odhiambo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <link rel="stylesheet" href="koll.css">
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <span class="navbar-toggle" onclick="toggleNav()">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </span>
+      <a class="navbar-brand" href="index.html">Mosecodes</a>
+    </div>
+    <!-- Navbar links for desktop -->
+    <ul class="nav navbar-nav navbar-right hidden-xs">
+      <li><a href="index.html" onclick="scrollToSection('myPage')">HOME</a></li>
+      <li><a href="abt.html" onclick="scrollToSection('band')">ABOUT</a></li>
+      <li><a href="kservices.html" onclick="scrollToSection('tour')">SERVICES</a></li>
+      <li><a href="kontact.html" onclick="scrollToSection('contact')">CONTACT</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html" onclick="scrollToSection('myPage')">HOME</a>
+  <a href="abt.html" onclick="scrollToSection('band')">ABOUT</a>
+  <a href="kservices.html" onclick="scrollToSection('tour')">SERVICES</a>
+  <a href="kontact.html" onclick="scrollToSection('contact')">CONTACT</a>
+</div>
+
+<div id="mainContent" class="main-content">
+  <!-- Main content goes here -->
+  
+  <div class="about-container">
+    <h1>I ❤️ what I do</h1>
+    <p>Welcome to my portfolio! I am passionate about web development and design. My journey started with a love for technology, and it has grown into a career where I get to create beautiful and functional websites. I believe in continuous learning and improving my skills to deliver the best results. Let’s explore my work and see what I can do for you!</p>
+</div>
+  
+<div class="services-container">
+  <div class="services-row top-row">
+      <div class="service">
+          <i class="fas fa-laptop-code"></i> Web Development
+      </div>
+      <div class="service">
+          <i class="fas fa-paint-brush"></i> UI/UX Design
+      </div>
+  </div>
+  <div class="services-row bottom-row">
+      <div class="service">
+          <i class="fas fa-images"></i> Graphic Design
+      </div>
+      <div class="service">
+          <i class="fas fa-desktop"></i> Web Design
+      </div>
+  </div>
+</div>
+
+
+<div class="work-container">
+  <h1>My Work❤️</h1>
+  <div class="work-item">
+      <img src="image/Project1.png" alt="" class="work-image">
+      <div class="work-info">
+          <h2>Zuri Online Grocery</h2>
+          <p class="work-description">
+            A user-friendly grocery website built with JS, HTML, and CSS for easy online shopping. Browse, add to cart, and checkout seamlessly on any device.
+              <span class="more-description" id="project1-more">This e-commerce grocery website, built using JavaScript, HTML, and CSS, 
+                offers a seamless online shopping experience. Designed for convenience, it allows users to browse a wide selection of
+                 grocery items, add products to their cart, and securely complete purchases. The responsive design ensures easy access across 
+                 devices, providing a user-friendly platform for hassle-free grocery shopping from the comfort of home.</span>
+          </p>
+          <a href="#" class="toggle-description" data-target="project1-more">Read More</a>
+          <a href="https://mosesodhiambooo.github.io/Grocery/" class="view-project-btn">View Project</a>
+      </div>
+  </div>
+  <div class="work-item">
+      <img src="image/project3.jpg" alt="" class="work-image">
+      <div class="work-info">
+          <h2>Time Tea Hub</h2>
+          <p class="work-description">
+              A brief overview of Project 2. Click "Show More" to read the full description.
+              <span class="more-description" id="project2-more">Detailed information about Project 2 that is initially hidden. This section will expand when "Show More" is clicked.</span>
+          </p>
+          <a href="#" class="toggle-description" data-target="project2-more">Read More</a>
+          <a href="project2.html" class="view-project-btn">View Project</a>
+      </div>
+  </div>
+  <!-- Add more work items as needed -->
+</div>
+
+<footer>
+  <div class="footer-container">
+      <!-- Social Media Links -->
+      <div class="footer-section social-media">
+          <h4>Follow Me</h4>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="footer-section contact-info">
+          <h4>Contact Me</h4>
+          <p><i class="fas fa-envelope"></i>mosesodhiambo801@gmail.com</p>
+          <p><i class="fas fa-phone-alt"></i> +254 717 892 776</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section quick-links">
+          <h4>Quick Links</h4>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="abt.html">About Me</a></li>
+              <li><a href="Kservices.html">Services</a></li>
+              <li><a href="kontact.html">Contact</a></li>
+          </ul>
+      </div>
+
+      
+
+      <!-- Map -->
+      <div class="footer-section map">
+          <h4>Location</h4>
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63910.14573224643!2d36.821946107016695!3d-1.2863895858259294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f112a2158a773%3A0x5a8b7199b8f5d8e9!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2s!4v1692615203409!5m2!1sen!2s"
+              width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+      </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+      <p>&copy; Moses Odhiambo. All rights reserved.</p>
+  </div>
+</footer>
+</div>
+
+
+<script src="kolll.js"></script>
+
+</body>
+</html>
