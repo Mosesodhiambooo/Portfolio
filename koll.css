@@ -116,6 +116,87 @@ body {
   color: #333;
 }
 
+
+    /* Keyframes for the animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Header Text Styling */
+.header-text {
+    text-align: center; /* Center-aligns the text */
+    padding: 20px;
+}
+
+/* Introduction Styling */
+.intro {
+    font-size: 1.2rem; /* Adjust size as needed */
+    color: #555; /* Subtle color for the introduction text */
+    margin-bottom: 20px; /* Space below the introduction */
+    animation: fadeIn 1s ease-out; /* Apply fade-in animation */
+    opacity: 0; /* Start hidden to be revealed by animation */
+}
+
+/* Heading Styling */
+.header-text h1 {
+    font-size: 3rem; /* Adjust size as needed */
+    margin: 0;
+    color: #333;
+    animation: fadeInUp 1s ease-out; /* Apply animation */
+}
+
+.header-text h1 span {
+    color: #007BFF; /* Accent color for the span */
+}
+
+/* Paragraph Styling */
+.header-text p {
+    font-size: 1.2rem; /* Adjust size as needed */
+    color: #555;
+    margin: 20px 0;
+    animation: slideInFromLeft 1s ease-out 0.5s forwards; /* Apply animation with delay */
+    opacity: 0; /* Start hidden to be revealed by animation */
+}
+
+/* Styling for strong elements */
+.header-text strong {
+    color: #007BFF; /* Accent color for strong text */
+}
+
+/* Centered Sentence Styling */
+.centered-sentence {
+    display: block; /* Ensures strong element is on a new line */
+    text-align: center; /* Center-aligns text */
+}
+
+
 /* Ensure the header-text has adequate space from the navbar */
 .header-text {
     margin-top: 80px; /* Adjust margin to ensure content is visible below the navbar */
@@ -192,17 +273,27 @@ body {
 }
 
 .cta-button {
-    padding: 10px 20px;
+    padding: 12px 24px; /* Slightly larger padding for better clickability */
     background-color: #007bff; /* Button background color */
     color: white;
     text-decoration: none;
-    border-radius: 15px;
+    border-radius: 30px; /* More rounded corners for a modern look */
     text-align: center;
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    font-size: 16px; /* Font size for better readability */
+    font-weight: 500; /* Slightly bold text */
+    display: inline-block; /* Allows padding to work correctly */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
 }
 
 .cta-button:hover {
     background-color: #0056b3; /* Hover state background color */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
 }
+
 
  /* General styling for the social media icons container */
  .social-icons {
@@ -291,34 +382,56 @@ body {
     opacity: 1;
 }
 
+/* Button Container */
+.cta-container {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 20px; /* Adjust the gap as needed */
+    margin-top: 20px; /* Optional: Add some space above the buttons */
+}
+
+/* View Project Button */
 .view-project {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
-    background: #007BFF;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+    background: linear-gradient(45deg, #007BFF, #0056b3); /* Gradient background */
+    padding: 12px 24px; /* Larger padding for a more substantial button */
+    border-radius: 30px; /* More rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+    display: inline-block; /* Ensures padding and other properties are applied correctly */
+    border: none; /* Removes default border */
+    outline: none; /* Removes default outline */
 }
 
 .view-project:hover {
-    background: #0056b3;
+    background: linear-gradient(45deg, #0056b3, #007BFF); /* Reverse gradient on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
 }
 
+/* View More Button */
 .view-more {
     display: inline-block;
     font-size: 16px;
     color: #fff;
     text-decoration: none;
     border: 2px solid #007BFF;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background 0.3s ease, color 0.3s ease;
+    background: transparent; /* Transparent background to contrast with border */
+    padding: 12px 24px; /* Larger padding for consistency */
+    border-radius: 30px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+    outline: none; /* Removes default outline */
 }
 
 .view-more:hover {
-    background: #007BFF;
-    color: #fff;
+    background: #007BFF; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+    border-color: #007BFF; /* Border color on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
 }
 
 @media (max-width: 768px) {
@@ -609,41 +722,23 @@ footer {
     color: #0056b3; /* Optional: hover color */
 }
 
-.contact-form {
-    margin-top: 30px;
+.contact-info {
+    margin-bottom: 20px; /* Optional: Adds space below the contact info */
+    text-align: center; /* Optional: Center-aligns the content */
 }
 
-.contact-form h4 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+.contact-info p {
+    color: white; /* Sets the text color to white */
+    font-size: 18px; /* Optional: Adjusts the font size */
+    margin: 0; /* Removes default margin */
 }
 
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contact-info i {
+    color: white; /* Ensures the icon color is also white */
+    margin-right: 8px; /* Adds space between the icon and text */
 }
 
-.contact-form textarea {
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1em;
-}
 
-.contact-form button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 
 .contact-form button:hover {
     background-color: #0056b3; /* Optional: hover color */
@@ -913,4 +1008,133 @@ footer {
         font-size: 0.9em;
         padding: 8px 12px;
     }
+}
+
+
+.form4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+}
+.form4 form {
+    width: 300px;
+    padding: 22px 20px;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.form4 form span {
+    font-size: 22px;
+    font-weight: 800;
+    color: #2e1e8a;
+    margin-bottom: 15px;
+    display: block;
+    text-align: center;
+}
+
+/* Input styling */
+.input17 {
+    position: relative;
+    color: black;
+    margin-bottom: 20px;
+}
+.input17 input,
+.input17 textarea {
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 14px;
+    border: 2px solid #ccc;
+    background-color: #f5f5f5;
+}
+.input17 textarea {
+    height: 100px;
+    resize: none;
+}
+.input17 input:focus,
+.input17 textarea:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+.input17 .firstSpan:before,
+.input17 .firstSpan:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: 0.4s;
+    transition-delay: 0.2s;
+}
+.input17 .firstSpan:after {
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: 0;
+    transition-delay: 0.6s;
+}
+.input17 .secondSpan:before,
+.input17 .secondSpan:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: #000;
+    transition: 0.2s;
+}
+.input17 .secondSpan:after {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    transition-delay: 0.4s;
+}
+.input17 input:focus ~ .firstSpan:before,
+.input17 input:focus ~ .firstSpan:after,
+.input17 textarea:focus ~ .firstSpan:before,
+.input17 textarea:focus ~ .firstSpan:after {
+    width: 100%;
+    transition: 0.2s;
+    transition-delay: 0.6s;
+}
+.input17 input:focus ~ .firstSpan:after,
+.input17 textarea:focus ~ .firstSpan:after {
+    transition-delay: 0.2s;
+}
+.input17 input:focus ~ .firstSpan .secondSpan:before,
+.input17 input:focus ~ .firstSpan .secondSpan:after,
+.input17 textarea:focus ~ .firstSpan .secondSpan:before,
+.input17 textarea:focus ~ .firstSpan .secondSpan:after {
+    height: 100%;
+    transition: 0.2s;
+}
+.input17 input:focus ~ .firstSpan .secondSpan:after,
+.input17 textarea:focus ~ .firstSpan .secondSpan:after {
+    transition-delay: 0.4s;
+}
+
+/* Button styling */
+.form4 button {
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    background-image: linear-gradient(to right, #5a28cc, #2e1e8a);
+    width: 100%;
+}
+.form4 button:hover {
+    background-image: linear-gradient(to right, #2e1e8a, #5a28cc);
 }
