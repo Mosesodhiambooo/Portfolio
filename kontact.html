@@ -47,9 +47,9 @@
 <div id="mainContent" class="main-content">
   <!-- Main content goes here -->
   <section class="contact-section">
+    <h2 style="text-align: center; margin-bottom: 20px; color: white;">Let's Connect</h2> <!-- Heading added here -->
     <div class="contact-container">
         <div class="contact-info">
-            <p><a href="mailto:mosesodhiambo801@gmail.com"><i class="fas fa-envelope"></i> mosesodhiambo801@gmail.com</a></p>
             <p><i class="fas fa-phone-alt"></i> +254 717 892 776</p>
         </div>
         <div class="mtandao">
@@ -58,28 +58,38 @@
             <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         </div>
-        <form action="https://api.web3forms.com/submit" method="POST">
-
-    <!-- Replace with your Access Key -->
-    <input type="hidden" name="access_key" value="7bb6fa59-c101-4471-ac7b-63356200fd2f">
-
-    <!-- Form Inputs. Each input must have a name="" attribute -->
-    <input type="text" name="name" required>
-    <input type="email" name="email" required>
-    <textarea name="message" required></textarea>
-
-    <!-- Honeypot Spam Protection -->
-    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-    <!-- Custom Confirmation / Success Page -->
-    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
-
-    <button type="submit">Submit Form</button>
-
-</form>
+        <div class="form4">
+          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="7bb6fa59-c101-4471-ac7b-63356200fd2f">
+              <span>Contact Form</span>
+      
+              <div class="input17">
+                  <input type="text" name="name" placeholder="First Name" required>
+                  <div class="firstSpan">
+                      <div class="secondSpan"></div>
+                  </div>
+              </div>
+      
+              <div class="input17">
+                  <input type="email" name="email" placeholder="Email" required>
+                  <div class="firstSpan">
+                      <div class="secondSpan"></div>
+                  </div>
+              </div>
+      
+              <div class="input17">
+                  <textarea name="message" placeholder="Message" required></textarea>
+                  <div class="firstSpan">
+                      <div class="secondSpan"></div>
+                  </div>
+              </div>
+      
+              <button type="submit">Submit</button>
+          </form>
+      </div>
     </div>
 </section>
-  
+
 
 <footer>
   <div class="footer-container">
