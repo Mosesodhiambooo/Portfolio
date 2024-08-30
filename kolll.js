@@ -63,19 +63,29 @@ function toggleNav() {
 });
 
 
-function handleSubmit() {
-    // Get the form element
-    const form = document.getElementById('contact-form');
-    
-    // Perform form submission (e.g., using AJAX)
-    // For demo purposes, we'll simply clear the form
-    
-    // Clear the textarea
-    document.getElementById('message').value = '';
-    
-    // Prevent the default form submission
-    return false;
-}
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  const form = event.target;
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+          'Accept': 'application/json'
+      }
+  }).then(response => {
+      if (response.ok) {
+          form.reset(); // Clear the form fields
+          alert("Thank you for your message! Moses We'll get back to you soon.");
+      } else {
+          alert("There was a problem with your submission. Please try again.");
+      }
+  }).catch(error => {
+      alert("There was a problem with your submission. Please try again.");
+  });
+});
 
 
 const services = document.querySelectorAll('.service');
