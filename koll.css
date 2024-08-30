@@ -88,7 +88,6 @@ body {
     cursor: pointer;
   }
 
-  /* Hide the side navigation when the page is scrolled */
   body {
     margin: 0;
     padding: 0;
@@ -151,69 +150,67 @@ body {
 
 /* Header Text Styling */
 .header-text {
-    text-align: center; /* Center-aligns the text */
+    text-align: center;
     padding: 20px;
 }
 
 /* Introduction Styling */
 .intro {
-    font-size: 1.2rem; /* Adjust size as needed */
-    color: #555; /* Subtle color for the introduction text */
-    margin-bottom: 20px; /* Space below the introduction */
-    animation: fadeIn 3s ease-out; /* Apply fade-in animation */
-    opacity: 0; /* Start hidden to be revealed by animation */
+    font-size: 1.2rem;
+    color: #555; 
+    margin-bottom: 20px; 
+    animation: fadeIn 3s ease-out; 
+    opacity: 0; 
 }
 
 /* Heading Styling */
 .header-text h1 {
-    font-size: 3rem; /* Adjust size as needed */
+    font-size: 3rem; 
     margin: 0;
     color: #333;
-    animation: fadeInUp 7s ease-out; /* Apply animation */
+    animation: fadeInUp 7s ease-out;
 }
 
 .header-text h1 span {
-    color: #007BFF; /* Accent color for the span */
+    color: #007BFF; 
 }
 
-/* Paragraph Styling */
 .header-text p {
-    font-size: 1.2rem; /* Adjust size as needed */
+    font-size: 1.2rem; 
     color: #555;
     margin: 20px 0;
-    animation: slideInFromLeft 2s ease-out 0.5s forwards; /* Apply animation with delay */
-    opacity: 0; /* Start hidden to be revealed by animation */
+    animation: slideInFromLeft 2s ease-out 0.5s forwards; 
+    opacity: 0;
 }
 
-/* Styling for strong elements */
+
 .header-text strong {
-    color: #007BFF; /* Accent color for strong text */
+    color: #007BFF; 
 }
 
 /* Centered Sentence Styling */
 .centered-sentence {
-    display: block; /* Ensures strong element is on a new line */
-    text-align: center; /* Center-aligns text */
+    display: block; 
+    text-align: center; 
 }
-
 
 /* Ensure the header-text has adequate space from the navbar */
 .header-text {
-    margin-top: 80px; /* Adjust margin to ensure content is visible below the navbar */
-    padding: 0 20px; /* Add padding for some space on the sides */
+    margin-top: 80px;
+    padding: 0 20px; 
     font-size: 30px;
     text-align: center;
-    color: #fff; /* Set text color to white */
+    color: #fff; 
 }
 
 .header-text h1 {
     font-size: 80px;
     margin-top: 20px;
-    color: #fff; /* Ensure h1 text color is white */
+    color: #fff; 
 }
 
 .header-text h1 span {
-    color: green; /* Highlight span text in green */
+    color: green;
 }
 
 .centered-sentence {
@@ -230,131 +227,126 @@ body {
 }
 
 .header-text h1, .header-text p {
-    color: #fff; /* Ensure both h1 and p text color is white */
+    color: #fff; 
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-text {
-        margin-top: 60px; /* Adjust margin for smaller screens */
-        padding: 0 15px; /* Reduce padding for smaller screens */
+        margin-top: 60px;
+        padding: 0 15px; 
     }
 
     .header-text h1 {
-        font-size: 40px; /* Reduce font size for smaller screens */
+        font-size: 40px; 
     }
 
     .header-text p {
-        font-size: medium; /* Adjust font size for paragraph */
-        text-align: center; /* Center-align paragraph text */
+        font-size: medium; 
+        text-align: center; 
     }
 }
 
 @media (max-width: 480px) {
     .header-text {
-        margin-top: 50px; /* Further adjust margin for very small screens */
-        padding: 0 10px; /* Further reduce padding for very small screens */
+        margin-top: 50px; 
+        padding: 0 10px; 
     }
 
     .header-text h1 {
-        font-size: 30px; /* Further reduce font size for very small screens */
+        font-size: 30px; 
     }
 
     .header-text p {
-        font-size: small; /* Further adjust font size for paragraph */
+        font-size: small; 
     }
 }
 
 .cta-container {
     display: flex;
-    justify-content: center; /* Centers the buttons horizontally */
-    gap: 20px; /* Adjust the gap as needed */
-    margin-top: 20px; /* Optional: Add some space above the buttons */
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 20px; 
 }
 
 .cta-button {
-    padding: 12px 24px; /* Slightly larger padding for better clickability */
-    background-color: #007bff; /* Button background color */
+    padding: 12px 24px; 
+    background-color: #007bff; 
     color: white;
     text-decoration: none;
-    border-radius: 30px; /* More rounded corners for a modern look */
+    border-radius: 30px;
     text-align: center;
-    border: none; /* Remove border */
-    outline: none; /* Remove outline */
-    font-size: 16px; /* Font size for better readability */
-    font-weight: 500; /* Slightly bold text */
-    display: inline-block; /* Allows padding to work correctly */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    border: none; 
+    outline: none; 
+    font-size: 16px; 
+    font-weight: 500;
+    display: inline-block; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .cta-button:hover {
-    background-color: #0056b3; /* Hover state background color */
-    transform: translateY(-2px); /* Slight lift effect on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
 }
 
 
 /* General styling for the social media icons container */
 .social-icons {
     display: flex;
-    justify-content: center; /* Centers the icons horizontally */
-    gap: 20px; /* Adjust space between icons */
-    margin-top: 30px; /* Adjust space above the icons */
+    justify-content: center;
+    gap: 20px; 
+    margin-top: 30px; 
 }
 
 /* Styling individual social media icons */
 .social-icon {
-    font-size: 24px; /* Adjust icon size */
-    color: green; /* Default icon color */
-    transition: color 0.3s, transform 0.3s; /* Smooth color and transform transition */
-    text-decoration: none; /* Remove underline from links */
-    animation: jump 4s infinite; /* Apply jumping animation with infinite loop */
+    font-size: 24px; 
+    color: green; 
+    transition: color 0.3s, transform 0.3s;
+    text-decoration: none;
+    animation: jump 4s infinite; 
 }
 
 /* Hover effect for social media icons */
 .social-icon:hover {
-    color: #007bff; /* Change color on hover */
-    transform: scale(1.1); /* Slightly enlarge icon on hover */
-    animation-play-state: paused; /* Pause the animation on hover */
+    color: gray; 
+    transform: scale(1.1); 
+    animation-play-state: paused;
 }
 
-/* Focus effect for social media icons */
 .social-icon:focus {
-    outline: 2px solid #007bff; /* Outline for keyboard navigation */
-    outline-offset: 4px; /* Space between the outline and the icon */
-    animation-play-state: paused; /* Pause the animation on focus */
+/*     outline: 2px solid #007bff;  */
+    outline-offset: 4px; 
+    animation-play-state: paused;
 }
 
-/* Keyframes for jump animation */
 @keyframes jump {
     0%, 20%, 100% {
-        transform: translateY(0); /* Original position */
+        transform: translateY(0); 
     }
     10% {
-        transform: translateY(-10px); /* Move up by 10px */
+        transform: translateY(-10px); 
     }
 }
 
 /* Applying staggered delays for each icon */
 .social-icon:nth-child(1) {
-    animation-delay: 0s; /* No delay for the first icon */
+    animation-delay: 0s; 
 }
 
 .social-icon:nth-child(2) {
-    animation-delay: 1s; /* 1 second delay for the second icon */
+    animation-delay: 1s; 
 }
 
 .social-icon:nth-child(3) {
-    animation-delay: 2s; /* 2 seconds delay for the third icon */
+    animation-delay: 2s; 
 }
 
 .social-icon:nth-child(4) {
-    animation-delay: 3s; /* 3 seconds delay for the fourth icon */
+    animation-delay: 3s; 
 }
-
-/* Add more nth-child selectors if you have more icons */
-
 
 .projects-section {
     padding: 20px;
@@ -362,7 +354,7 @@ body {
     background-color: black;
     margin-top: 10px;
     border-radius: 1%;
-    border: 2px solid white; /* White border around the container */
+    border: 2px solid white; 
 }
 
 .projects-title {
@@ -420,9 +412,9 @@ body {
 /* Button Container */
 .cta-container {
     display: flex;
-    justify-content: center; /* Centers the buttons horizontally */
-    gap: 20px; /* Adjust the gap as needed */
-    margin-top: 20px; /* Optional: Add some space above the buttons */
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 20px; 
 }
 
 /* View Project Button */
@@ -430,20 +422,20 @@ body {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
-    background: linear-gradient(45deg, #007BFF, #0056b3); /* Gradient background */
-    padding: 12px 24px; /* Larger padding for a more substantial button */
-    border-radius: 30px; /* More rounded corners for a modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
-    display: inline-block; /* Ensures padding and other properties are applied correctly */
-    border: none; /* Removes default border */
-    outline: none; /* Removes default outline */
+    background: linear-gradient(45deg, #007BFF, #0056b3); 
+    padding: 12px 24px; 
+    border-radius: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background 0.3s ease, transform 0.3s ease; 
+    display: inline-block; 
+    border: none; 
+    outline: none; 
 }
 
 .view-project:hover {
-    background: linear-gradient(45deg, #0056b3, #007BFF); /* Reverse gradient on hover */
-    transform: translateY(-2px); /* Slight lift effect on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+    background: linear-gradient(45deg, #0056b3, #007BFF); 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
 }
 
 /* View More Button */
@@ -453,20 +445,20 @@ body {
     color: #fff;
     text-decoration: none;
     border: 2px solid #007BFF;
-    background: transparent; /* Transparent background to contrast with border */
-    padding: 12px 24px; /* Larger padding for consistency */
-    border-radius: 30px; /* More rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
-    outline: none; /* Removes default outline */
+    background: transparent; 
+    padding: 12px 24px; 
+    border-radius: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease; /
+    outline: none; 
 }
 
 .view-more:hover {
-    background: #007BFF; /* Background color on hover */
-    color: #fff; /* Text color on hover */
-    border-color: #007BFF; /* Border color on hover */
-    transform: translateY(-2px); /* Slight lift effect on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+    background: #007BFF; 
+    color: #fff; 
+    border-color: #007BFF;
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
 }
 
 @media (max-width: 768px) {
@@ -510,7 +502,7 @@ footer {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 40px; /* Adds space between footer and content above */
+    margin-top: 40px; 
 }
 
 .footer-container {
@@ -520,7 +512,6 @@ footer {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    /* Add horizontal padding to prevent content from touching screen edges */
     padding: 0 20px;
 }
 
@@ -528,7 +519,6 @@ footer {
     flex: 1;
     margin: 10px;
     min-width: 200px;
-    /* Center text and align content */
     text-align: center;
 }
 
@@ -589,14 +579,12 @@ footer {
 
 @media (max-width: 768px) {
     .footer-container {
-        /* Center the content when it wraps */
         justify-content: center;
     }
 
     .footer-section {
-        /* Ensure sections stack vertically and are centered */
         flex: 1 1 auto;
-        max-width: 300px; /* Adjust as needed */
+        max-width: 300px; 
         text-align: center;
     }
 }
@@ -617,7 +605,6 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    /* border: 2px solid white; White border around the container */
 }
 
 .expertise-icon {
@@ -634,8 +621,7 @@ footer {
 }
 
 .expertise-icon img {
-    width: 60px; /* Adjust size as needed */
-    height: auto;
+    width: 60px; 
 }
 
 .expertise-icon p {
@@ -662,7 +648,7 @@ footer {
     }
 
     .expertise-icon img {
-        width: 50px; /* Adjust size as needed */
+        width: 50px;
     }
 }
 
@@ -738,7 +724,7 @@ footer {
 
 .contact-info i {
     margin-right: 10px;
-    color: #007BFF; /* Optional: icon color */
+    color: #007BFF; /*icon color */
 }
 
 .mtandao {
@@ -754,29 +740,28 @@ footer {
 }
 
 .mtandao a:hover {
-    color: #0056b3; /* Optional: hover color */
+    color: #0056b3; 
 }
 
 .contact-info {
-    margin-bottom: 20px; /* Optional: Adds space below the contact info */
-    text-align: center; /* Optional: Center-aligns the content */
-}
+    margin-bottom: 20px; 
+    text-align: center; 
 
 .contact-info p {
-    color: white; /* Sets the text color to white */
-    font-size: 18px; /* Optional: Adjusts the font size */
-    margin: 0; /* Removes default margin */
+    color: white; 
+    font-size: 18px; 
+    margin: 0;
 }
 
 .contact-info i {
-    color: white; /* Ensures the icon color is also white */
-    margin-right: 8px; /* Adds space between the icon and text */
+    color: white; 
+    margin-right: 8px; 
 }
 
 
 
 .contact-form button:hover {
-    background-color: #0056b3; /* Optional: hover color */
+    background-color: #0056b3; 
 }
 
 @media (max-width: 768px) {
@@ -792,9 +777,8 @@ footer {
 
 .about-container {
     width: 80%;
-    margin: 60px auto 0; /* Added top margin */
+    margin: 60px auto 0; 
     padding: 20px;
-    /* background-color: #f9f9f9; */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -818,10 +802,9 @@ footer {
     width: 80%;
     margin: 50px auto 0;
     padding: 20px;
-    /* background-color: #f9f9f9; */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid white; /* White border around the container */
+    border: 2px solid white; 
 }
 .moses img {
     max-width: 40%;
@@ -861,10 +844,9 @@ footer {
 
 .services-container {
     width: 100%;
-    height: 150px; /* Reduced height for tighter layout */
+    height: 150px; 
     position: relative;
     overflow: hidden;
-    /* background-color: #fff; */
     border: 1px solid #ccc;
 }
 
@@ -888,8 +870,8 @@ footer {
 }
 
 .service {
-    padding: 5px 15px; /* Reduced padding for tighter spacing */
-    margin: 0 10px; /* Reduced margin between services */
+    padding: 5px 15px; 
+    margin: 0 10px; 
     background-color: #007BFF;
     color: #fff;
     border-radius: 5px;
@@ -946,7 +928,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensures content is spaced */
+    justify-content: space-between; 
     align-items: center;
 }
 
@@ -966,7 +948,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-grow: 1; /* Allows the info section to take up the available space */
+    flex-grow: 1; 
 }
 
 .work-description {
@@ -982,7 +964,7 @@ footer {
 
 .toggle-description {
     display: inline-block;
-    margin-top: auto; /* Pushes the button to the bottom */
+    margin-top: auto; 
     padding: 8px 12px;
     border-radius: 5px;
     text-decoration: none;
