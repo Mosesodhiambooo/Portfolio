@@ -160,7 +160,7 @@ body {
     font-size: 1.2rem; /* Adjust size as needed */
     color: #555; /* Subtle color for the introduction text */
     margin-bottom: 20px; /* Space below the introduction */
-    animation: fadeIn 1s ease-out; /* Apply fade-in animation */
+    animation: fadeIn 4s ease-out; /* Apply fade-in animation */
     opacity: 0; /* Start hidden to be revealed by animation */
 }
 
@@ -169,7 +169,7 @@ body {
     font-size: 3rem; /* Adjust size as needed */
     margin: 0;
     color: #333;
-    animation: fadeInUp 1s ease-out; /* Apply animation */
+    animation: fadeInUp 4s ease-out; /* Apply animation */
 }
 
 .header-text h1 span {
@@ -181,7 +181,7 @@ body {
     font-size: 1.2rem; /* Adjust size as needed */
     color: #555;
     margin: 20px 0;
-    animation: slideInFromLeft 1s ease-out 0.5s forwards; /* Apply animation with delay */
+    animation: slideInFromLeft 1s ease-out 4s forwards; /* Apply animation with delay */
     opacity: 0; /* Start hidden to be revealed by animation */
 }
 
