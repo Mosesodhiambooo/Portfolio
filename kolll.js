@@ -124,3 +124,10 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   });
 });
+
+
+document.onkeydown = function(e) {
+    if (e.ctrlKey && (e.key === 'c' || e.key === 'a')) {
+        e.preventDefault();
+    }
+};
