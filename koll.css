@@ -89,6 +89,11 @@ body {
   }
 
   /* Hide the side navigation when the page is scrolled */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
   .main-content {
     margin-left: 0;
     transition: margin-left 0.5s;
@@ -155,7 +160,7 @@ body {
     font-size: 1.2rem; /* Adjust size as needed */
     color: #555; /* Subtle color for the introduction text */
     margin-bottom: 20px; /* Space below the introduction */
-    animation: fadeIn 4s ease-out; /* Apply fade-in animation */
+    animation: fadeIn 3s ease-out; /* Apply fade-in animation */
     opacity: 0; /* Start hidden to be revealed by animation */
 }
 
@@ -164,7 +169,7 @@ body {
     font-size: 3rem; /* Adjust size as needed */
     margin: 0;
     color: #333;
-    animation: fadeInUp 4s ease-out; /* Apply animation */
+    animation: fadeInUp 7s ease-out; /* Apply animation */
 }
 
 .header-text h1 span {
@@ -176,7 +181,7 @@ body {
     font-size: 1.2rem; /* Adjust size as needed */
     color: #555;
     margin: 20px 0;
-    animation: slideInFromLeft 1s ease-out 4s forwards; /* Apply animation with delay */
+    animation: slideInFromLeft 2s ease-out 0.5s forwards; /* Apply animation with delay */
     opacity: 0; /* Start hidden to be revealed by animation */
 }
 
@@ -290,8 +295,8 @@ body {
 }
 
 
- /* General styling for the social media icons container */
- .social-icons {
+/* General styling for the social media icons container */
+.social-icons {
     display: flex;
     justify-content: center; /* Centers the icons horizontally */
     gap: 20px; /* Adjust space between icons */
@@ -304,17 +309,52 @@ body {
     color: green; /* Default icon color */
     transition: color 0.3s, transform 0.3s; /* Smooth color and transform transition */
     text-decoration: none; /* Remove underline from links */
+    animation: jump 4s infinite; /* Apply jumping animation with infinite loop */
 }
 
+/* Hover effect for social media icons */
 .social-icon:hover {
-    color: #007bff; /* Hover color */
+    color: #007bff; /* Change color on hover */
     transform: scale(1.1); /* Slightly enlarge icon on hover */
+    animation-play-state: paused; /* Pause the animation on hover */
 }
 
+/* Focus effect for social media icons */
 .social-icon:focus {
     outline: 2px solid #007bff; /* Outline for keyboard navigation */
     outline-offset: 4px; /* Space between the outline and the icon */
+    animation-play-state: paused; /* Pause the animation on focus */
 }
+
+/* Keyframes for jump animation */
+@keyframes jump {
+    0%, 20%, 100% {
+        transform: translateY(0); /* Original position */
+    }
+    10% {
+        transform: translateY(-10px); /* Move up by 10px */
+    }
+}
+
+/* Applying staggered delays for each icon */
+.social-icon:nth-child(1) {
+    animation-delay: 0s; /* No delay for the first icon */
+}
+
+.social-icon:nth-child(2) {
+    animation-delay: 1s; /* 1 second delay for the second icon */
+}
+
+.social-icon:nth-child(3) {
+    animation-delay: 2s; /* 2 seconds delay for the third icon */
+}
+
+.social-icon:nth-child(4) {
+    animation-delay: 3s; /* 3 seconds delay for the fourth icon */
+}
+
+/* Add more nth-child selectors if you have more icons */
+
 
 .projects-section {
     padding: 20px;
