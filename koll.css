@@ -89,11 +89,6 @@ body {
   }
 
   /* Hide the side navigation when the page is scrolled */
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
   .main-content {
     margin-left: 0;
     transition: margin-left 0.5s;
