@@ -1,333 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meredith Beal</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Evenia:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Papyrus&family=Euvenia&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <title>Moses Odhiambo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <link rel="stylesheet" href="koll.css">
 
 </head>
-<body>
-  <nav>
-    <div class="navbar">
-      <i class='bx bx-menu'></i>
-      <div class="logo"><a href="index.html">Meredith Beal</a></div>
-      <div class="nav-links">
-        <div class="sidebar-logo">
-          <span class="logo-name">Meredith Beal</span>
-          <i class='bx bx-x' ></i>
-        </div>
-        <ul class="links">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="#">EDUCATION</a></li>
-          <li><a href="mbtv.html">MBTV</a></li>
-          <li>
-            <a href="#">CONSULTING</a>
-            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
-            <ul class="htmlCss-sub-menu sub-menu">
-              <li class="more">
-                <span><a href="#">TECH</a>
-                <i class='bx bxs-chevron-right arrow more-arrow'></i>
-              </span>
-                <ul class="more-sub-menu sub-menu">
-                  <li><a href="#">CYBERSECURITY</a></li>
-                  <li><a href="#">AI & BLOCKCHAIN</a></li>
-                </ul>
-              </li>
-              <li><a href="#">DIPLOMACY</a></li>
-              <li class="more">
-                <span><a href="#">CONSULAR SERVICES</a>
-                <i class='bx bxs-chevron-right arrow more-arrow'></i>
-              </span>
-                <ul class="more-sub-menu sub-menu">
-                  <li><a href="#">SECRETARIAT</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#">WRITINGS</a></li>
-          <li>
-            <a href="#">MORE</a>
-            <i class='bx bxs-chevron-down js-arrow arrow '></i>
-            <ul class="js-sub-menu sub-menu">
-              <li><a href="#news">NEWS</a></li>
-              <li><a href="#">PEACEWORK</a></li>
-              <li><a href="#">MUSIC</a></li>
-              <li><a href="#">BROADCASTING</a></li>
-              <li><a href="Gallery.html">GALLERY</a></li>
-              <li><a href="#">MB STORE</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-    
-  <div class="container bealcoronation mt-5">
-    <!-- Coronation Heading -->
-    <h1 class="coronation-heading">Coronation</h1>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <!-- Image cards in a row for larger screens -->
-    <div class="image-row row">
-        <div class="col-md-4">
-            <div class="card">
-                <img src="huh/coronation1.jpeg" class="card-img-top" alt="">
-                <div class="card-body">
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img src="huh/coronation2.jpg" class="card-img-top" alt="">
-                <div class="card-body">
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img src="huh/coronation3.jpeg" class="card-img-top" alt="">
-                <div class="card-body">
-                </div>
-            </div>
-        </div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <span class="navbar-toggle" onclick="toggleNav()">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </span>
+      <a class="navbar-brand" href="index.html">Mosecodes</a>
     </div>
-
-    <!-- Carousel for smaller screens -->
-    <div id="bealcoronationCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="huh/coronation1.jpeg" class="d-block w-100" alt="">
-                <div class="carousel-caption">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="huh/coronation2.jpg" class="d-block w-100" alt="">
-                <div class="carousel-caption">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="huh/coronation3.jpeg" class="d-block w-100" alt="">
-                <div class="carousel-caption">
-                </div>
-            </div>
-        </div>
-
-        <!-- Modern Dot Indicators below the carousel -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#bealcoronationCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-            <button type="button" data-bs-target="#bealcoronationCarousel" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#bealcoronationCarousel" data-bs-slide-to="2"></button>
-        </div>
-    </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Description Section -->
-  <section class="description-section">
-    <div class="mdescription-card">
-      <p class="mdescription-text">
-        On the 27th & 28th of April 2024, Meredith  Clayton Beal was appointed as Senior Paramount Chief of the Bakholokoe Kingdom by his
-        Royal Majesty King Letsitsa II
-      </p>
-      <a href="huh/Panel-4-doc 1-2024 Peace Proposal Synopsis-Official (1).pdf" class="read-more-link">Read More</a>
-    </div>
-  </section>
-
-  <div class="container">
-    <h1 class="heading">Books</h1>
-    <div class="bealboks">
-      <div class="bealcard first-card">
-        <img src="huh/Panel22.jpg" alt="">
-      </div>
-      <div class="bealcard with-description">
-        <div class="description top">
-          <p><b>Meredith's New Book</b></p>
-          <p class="special-text">Victory Moment to Moment</p>
-          <p><b>is now available on Amazon worldwide as well as your favorite book sellers.</b></p>
-          <a href="">Take a peak</a>
-        </div>
-        <img src="huh/Panel22b.jpg" alt="">
-        <div class="description bottom">
-          <a href="">Visit Virtual gallery</a>
-        </div>
-      </div>
-    </div>
-    <a href="shop.html" class="grab-button">Get your copy</a>
+    <!-- Navbar links for desktop -->
+    <ul class="nav navbar-nav navbar-right hidden-xs">
+      <li><a href="index.html" onclick="scrollToSection('myPage')">HOME</a></li>
+      <li><a href="abt.html" onclick="scrollToSection('band')">ABOUT</a></li>
+      <li><a href="kservvices.html" onclick="scrollToSection('tour')">SERVICES</a></li>
+      <li><a href="kontact.html" onclick="scrollToSection('contact')">CONTACT</a></li>
+    </ul>
   </div>
-  
-    <div class="video-container">
-      <h1 class="video-heading">GLOBAL ADVENTURE</h1>
-      <div class="video-card">
-          <video controls>
-              <source src="huh/Addis Sunrise by Meredith Clayton Beal.mp4" type="video/mp4">
-          </video>
+</nav>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html" onclick="scrollToSection('myPage')">HOME</a>
+  <a href="abt.html" onclick="scrollToSection('band')">ABOUT</a>
+  <a href="kservvices.html" onclick="scrollToSection('tour')">SERVICES</a>
+  <a href="kontact.html" onclick="scrollToSection('contact')">CONTACT</a>
+</div>
+
+<div id="mainContent" class="main-content">
+  <!-- Main content goes here -->
+  <div class="header-text">
+    <p class="intro">Hello, I am Moses Odhiambo, Web Developer</p>
+    <h1>Web Design that <br> drives <span>Sales.!</span></h1>
+    <p>Design, Copy, and development engineered to <strong>turn browsers into buyers</strong> and <strong class="centered-sentence">drive sales on autopilot...!</strong></p>
+</div>
+
+
+<!-- CTA Button Container -->
+<div class="cta-container">
+  <a href="kontact.html" class="cta-button">Get in Touch</a>
+  <a href="Moses Odhiambo CV.pdf" class="cta-button" download="">Download CV</a>
+</div>
+
+<!-- Social Media Icons -->
+<div class="social-icons">
+  <a href="https://github.com/Mosesodhiambooo" target="_blank" class="social-icon" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+  </a>
+  <a href="www.linkedin.com/in/moses-odhiambo-425835272" target="_blank" class="social-icon" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://twitter.com/@Od18043563Moses" target="_blank" class="social-icon" aria-label="Twitter">
+      <i class="fab fa-twitter"></i> 
+  </a>
+  <a href="https://www.facebook.com/profile.php?id=100079897543552" target="_blank" class="social-icon" aria-label="Facebook">
+      <i class="fab fa-facebook"></i>
+  </a>
+</div>
+
+
+<section class="stats-section">
+  <div class="stats-container">
+      <div class="stats-item">
+          <span class="stats-number" data-target="10">0</span>
+          <p>Projects Built</p>
+      </div>
+      <div class="stats-item">
+          <span class="stats-number" data-target="2">0</span>
+          <p>Years of Experience</p>
       </div>
   </div>
+</section>
 
-  
-  <div class="heading-container">
-    <h1 class="heading">Peace Proposal</h1>
-  </div>
-  
-  <div class="card-container">
-    <div class="peace description-card">
-      <div class="card-content description">
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
-           at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
-           as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and 
-           web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+<section class="expertise-section">
+  <h2 class="expertise-title">My Expertise</h2>
+  <div class="expertise-container">
+      <div class="expertise-icon">
+          <i class="fab fa-html5"></i>
+          <p>HTML</p>
       </div>
-    </div>
-    <div class="peace image-card">
-      <img src="huh/Panel-4-image 2-2024 PP Cover.png" alt="" class="card-image">
-    </div>
-    <div class="peace centered-image-card">
-      <div class="card-content center-image">
-        <img src="huh/Panel-4-image 2-MB-UN-circle.jpg" alt="" class="centered-image">
+      <div class="expertise-icon">
+          <i class="fab fa-css3-alt"></i>
+          <p>CSS</p>
       </div>
-    </div>
+      <div class="expertise-icon">
+          <i class="fab fa-js"></i>
+          <p>JavaScript</p>
+      </div>
+      <div class="expertise-icon">
+          <i class="fab fa-react"></i>
+          <p>React</p>
+      </div>
+      <div class="expertise-icon">
+          <i class="fab fa-python"></i>
+          <p>Python</p>
+      </div>
+      <div class="expertise-icon">
+          <i class="fab fa-php"></i>
+          <p>PHP</p>
+      </div>
   </div>
-  
-  <div class="read-more-container">
-    <a href="your-shop-link.html" class="read-more-button">Read more</a>
-  </div>
-  
-  
-  
+</section>
 
-       
-<div class="news-container-wrapper">
-  <h2 class="news-heading">New & Blogs</h2>
-  <div class="news-container" id="news">
-    <div class="news-card">
-      <img src="images/Panel-5-image 1-Commonwealth.jpg" alt="Image 1">
-      <p class="news-description">Description for the first image goes here. Explain what the image is about.</p>
-    </div>
-    <div class="news-card">
-      <img src="images/Panel-5-image 1-Commonwealth.jpg" alt="Image 2">
-      <p class="news-description">Description for the second image goes here. Explain what the image is about.</p>
-    </div>
-    <div class="news-card">
-      <img src="images/Panel-5-image 2-Mussie-beal.jpg" alt="Image 3">
-      <p class="news-description">Description for the third image goes here. Explain what the image is about.</p>
-    </div>
-    <div class="twitter-feed">
-      <a class="twitter-timeline" href="https://twitter.com/@MeredithCBeal">Tweets by Meredith Beal</a> 
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
+<section class="projects-section">
+  <h2 class="projects-title">Each Project is a unique art of development</h2>
+  <div class="projects-container">
+      <div class="project-card">
+          <img src="image/Project1.png" alt="" class="project-image">
+          <div class="project-overlay">
+              <a href="https://mosesodhiambooo.github.io/Zuri/" class="view-project">Explore</a>
+          </div>
+      </div>
+      <div class="project-card">
+          <img src="image/project5.jpg" alt="" class="project-image">
+          <div class="project-overlay">
+              <a href="project2.html" class="view-project">Explore</a>
+          </div>
+      </div>
+      <div class="project-card">
+          <img src="image/project3.jpg" alt="" class="project-image">
+          <div class="project-overlay">
+              <a href="project3.html" class="view-project">Explore</a>
+          </div>
+      </div>
   </div>
-  <a href="#view-all" class="view-all-link">View All</a>
+  <a href="kservvices.html" class="view-more">Explore All</a>
+</section>
+
+
+<footer>
+  <div class="footer-container">
+      <!-- Social Media Links -->
+      <div class="footer-section social-media">
+          <h4>Follow Me</h4>
+          <a href="https://www.facebook.com/profile.php?id=100079897543552"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/@Od18043563Moses"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="footer-section contact-info">
+          <h4>Contact Me</h4>
+          <p><i class="fas fa-envelope"></i>mosesodhiambo801@gmail.com</p>
+          <p><i class="fas fa-phone-alt"></i> +254 717 892 776</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section quick-links">
+          <h4>Quick Links</h4>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="abt.html">About Me</a></li>
+              <li><a href="kservvices.html">Services</a></li>
+              <li><a href="kontact.html">Contact</a></li>
+          </ul>
+      </div>
+
+      
+
+      <!-- Map -->
+      <div class="footer-section map">
+          <h4>Location</h4>
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63910.14573224643!2d36.821946107016695!3d-1.2863895858259294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f112a2158a773%3A0x5a8b7199b8f5d8e9!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2s!4v1692615203409!5m2!1sen!2s"
+              width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+      </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+      <p>&copy; Moses Odhiambo. All rights reserved.</p>
+  </div>
+</footer>
 </div>
 
-<div class="video-container">
-  <h1 class="video-heading">SLIDER &LARGE</h1>
-  <div class="video-card">
-      <video controls>
-          <source src="huh/Beal.mp4" type="video/mp4">
-      </video>
-  </div>
-</div>
-<div class="video-container">
-  <h1 class="video-heading">CNBC</h1>
-  <div class="video-card">
-      <video controls>
-          <source src="huh/Beal.mp4" type="video/mp4">
-      </video>
-  </div>
-</div>
 
+<script src="kolll.js"></script>
 
-<div class="mbtv-container" id="mbtv">
-  <!-- Heading at the top center -->
-  <h2 class="mbtv-heading">MBTV</h2>
-
-  <div class="mbtv-videos">
-    <div class="mbtv-card">
-      <video id="video1" controls muted playsinline>
-        <source src="huh/Panel-3-GlobalAdventureGallery1.mov" type="video/mp4">
-      </video>
-      <p class="video-name">Video 1: Introduction</p>
-    </div>
-    <div class="mbtv-card hidden-small-screen">
-      <video id="video2" controls muted playsinline>
-        <source src="huh/Agenda 2063 Meredith Beal.mp4" type="video/mp4">
-      </video>
-      <p class="video-name">Video 2: Tutorial</p>
-    </div>
-    <div class="mbtv-card hidden-small-screen">
-      <video id="video3" controls muted playsinline>
-        <source src="huh/Addis Sunrise by Meredith Clayton Beal.mp4" type="video/mp4">
-      </video>
-      <p class="video-name">Video 3: Conclusion</p>
-    </div>
-  </div>
-
-  <!-- Show More / Show Less Buttons (visible on small screens only) -->
-  <button id="toggle-videos" class="show-more-btn hidden-large-screen">Show More</button>
-</div>
-
-
-<div class="abtmeredith">
-  <!-- Profile Section -->
-  <div class="profile-content">
-    <h1>About Meredith</h1>
-    <img src="huh/Panel-9-image 1-MB Gray suit profile.jpg" alt="" class="profile-image">
-    <a href="images/Panel-9-MB Profile 2024.pdf" class="view-profile">View Profile</a>
-</div>
-
-
-
-  <!-- Downloads Section -->
-  <div class="downloads-section">
-    <h2 class="section-heading">Downloads</h2>
-    <div class="downloads-links">
-      <a href="huh/Panel-9-MB Profile 2024.pdf" class="download-link">Download CV</a>
-      <a href="huh/Panel-9-Meredith Beal 2024 Mini Bio (1).pdf" class="download-link">Profile</a>
-      <a href="huh/Panel-9-Meredith Beal Bio 2024 (1).pdf" class="download-link">Biography</a>
-      <a href="huh/Panel-9-MB Profile 2024.pdf" class="download-link">Download CV</a>
-      <a href="huh/Panel-9-Meredith Beal 2024 Mini Bio (1).pdf" class="download-link">Profile</a>
-      <a href="huh/Panel-9-Meredith Beal Bio 2024 (1).pdf" class="download-link">Biography</a>
-    </div>
-  </div>
-
-  <!-- Images Section -->
-<div class="images-section">
-  <h2 class="section-heading">Images</h2>
-  <div class="thumbnail-carousel">
-    <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
-    <div class="thumbnail-container">
-      <div class="thumbnail"><img src="huh/Panel-9-image 1-MB Gray suit profile.jpg" alt=""></div>
-      <div class="thumbnail"><img src="huh/coronation2.jpg" alt=""></div>
-      <div class="thumbnail"><img src="huh/coronation1.jpeg" alt=""></div>
-      <div class="thumbnail"><img src="huh/Panel-9-image 1-MB Gray suit profile.jpg" alt=""></div>
-      <div class="thumbnail"><img src="huh/Panel-9-image 1-MB Gray suit profile.jpg" alt=""></div>
-      <div class="thumbnail"><img src="huh/Panel-9-image 1-MB Gray suit profile.jpg" alt=""></div>
-    </div>
-    <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
-  </div>
-
-  <!-- Pagination Dots -->
-  <div class="pagination">
-    <span class="pagination-dot" onclick="goToSlide(0)"></span>
-    <span class="pagination-dot" onclick="goToSlide(1)"></span>
-    <span class="pagination-dot" onclick="goToSlide(2)"></span>
-    <span class="pagination-dot" onclick="goToSlide(3)"></span>
-    <span class="pagination-dot" onclick="goToSlide(4)"></span>
-    <span class="pagination-dot" onclick="goToSlide(5)"></span>
-  </div>
-</div>
-
-  <!-- SwiperJS script -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Linking custom script -->
-  <script src="script.js"></script>
 </body>
 </html>
